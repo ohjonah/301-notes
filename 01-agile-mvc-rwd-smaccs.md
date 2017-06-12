@@ -53,4 +53,52 @@ img {
 #### Font Icons
 * [icomoon](icomoon.io) - generated icon svgs
 
+#### Hamburger Menu
+```html
+<header>
+  <nav>
+    <span class="icon-menu"></span>
+    <ul>
+      <li><a href="home.html" class="icon-#">Home</a></li>
+      <li><a href="about.html" class="icon-#">About</a></li>
+      <li><a href="github.com/ohjonah" class="icon-#">GitHub</a></li>
+      <li><a href="about.html" class="icon-#">Twitter</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+at a certain screen width, we want it to appear with the hamburger menu
+```css
+nav ul {
+  display: none;
+}
+```
+to set a conditional, use a Media Query
+```css
+nav ul {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  nav ul {
+    display: block;
+  }
+
+  nav span.icon-menu {
+    display: none;
+  }
+};
+```
+
 # SMACCS
+
+> Scalable and Modular Architecture for CSS
+* Resource: [SMACCS](https://smacss.com/)
+
+#### 5 Categories of SMACSS
+* Base Rules - default rules, i.e. single element selectors
+* Layout Rules - divide page into sections
+* Module Rules - reusable, modular parts of our design
+* State Rules - how it will look in a particular state
+* Theme Rules - how it will look at a particular time
