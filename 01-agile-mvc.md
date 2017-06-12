@@ -30,11 +30,24 @@ Model, View, Controller.
 > You can achieve this using Media Queries
 
 #### Media Queries
-Allows you to conditionally modify the layout of a webpage.
+Allows you to conditionally modify the layout of a webpage. Example may be a grid system or using the following libraries.
 
 * Libraries:
   * Foundation
   * Bootstrap
   * Skeleton
+
+#### Rudimentary Ways to RWD
+to scale imgs
+```css
+img {
+  max-width: 100%;
+}
+```
+
+```html
+<!-- Using a meta tag -->
+<meta name="viewport" content="width=device-width, intial-scale=1">
+```
 
 # SMACCS
