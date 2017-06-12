@@ -38,16 +38,19 @@ Allows you to conditionally modify the layout of a webpage. Example may be a gri
   * Skeleton
 
 #### Rudimentary Ways to RWD
-to scale imgs
+* to scale imgs
 ```css
 img {
   max-width: 100%;
 }
 ```
-
+* communicates that this is a responsive page
 ```html
 <!-- Using a meta tag -->
 <meta name="viewport" content="width=device-width, intial-scale=1">
 ```
+
+#### Font Icons
+* [icomoon](icomoon.io) - generated icon svgs
 
 # SMACCS
