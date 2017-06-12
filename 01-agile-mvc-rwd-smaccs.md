@@ -91,10 +91,10 @@ nav ul {
 };
 ```
 
-# SMACCS
+# SMACSS
 
 > Scalable and Modular Architecture for CSS
-* Resource: [SMACCS](https://smacss.com/)
+* Resource: [SMACSS](https://smacss.com/)
 
 #### 5 Categories of SMACSS
 * Base Rules - default rules, i.e. single element selectors
