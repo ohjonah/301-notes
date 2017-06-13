@@ -16,3 +16,8 @@
 * [SMACCS](https://smacss.com/)
 
 ### Demos
+
+### Books
+* Javascript, The Good Parts
+* Eloquent Javascript
+* Javascript Design Patterns
