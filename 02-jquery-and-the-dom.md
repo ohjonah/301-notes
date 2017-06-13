@@ -123,7 +123,6 @@ $('.el').data('category');
 $('.el').data('category', 'shoes');
 ```
 
-
 * *append an element to the D
 OM*
 ```js
@@ -132,6 +131,10 @@ $('ul').append('<li>new item</li>');
 * *remove an item from the DOM*
 ```js
 $('.el').remove();
+```
+* *copy the HTML of another element*
+```js
+$('.el').copy();
 ```
 
 * *wrap your jQ in:*
@@ -142,3 +145,24 @@ $(document).ready(function() {
 ```
 
 # Assignment Prep
+
+First TODO:
+1. code.jquery.com
+2. minified
+3. put script tag at bottom
+4. your script tag goes below
+
+```js
+function Article (rawDataObj) {
+  this.title = rawDataObj.title;
+}
+```
+
+$('.container').find('p');
+
+<div class="container">
+<div>
+<span class="active"></span>
+
+author name:
+$newArticle.find('.byline').find('.a');
