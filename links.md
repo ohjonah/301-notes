@@ -14,6 +14,7 @@
 
 ### Resources
 * [SMACCS](https://smacss.com/)
+* [jQ cheat sheet](https://oscarotero.com/jquery/)
 
 ### Demos
 

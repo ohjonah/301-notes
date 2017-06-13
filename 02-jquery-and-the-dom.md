@@ -40,7 +40,7 @@ var els = document.getElementsByTagName('li').textContent = 'News';
 ```
 * Also, added and removed elements, read attributes and values, navigate the tree and manage user interactions, events, etc...
 
-#### jQuery
+# jQuery
 > JS library that provides an API for
  * DOM selections,
  * Dom manipulation,
@@ -48,8 +48,97 @@ var els = document.getElementsByTagName('li').textContent = 'News';
  * Event management
  * AJAX
 
+* jQuery looks like this:
+```js
+$('selector string').actionToPerform(args);
+```
+* this is what jQuery is doing:
+```js
+$('.el').hide(args);
+```
 
+  * $ = 'jQuery'
+  * () = function call
+  * .el = jQuery Object
+  * hide = the method;
+  * () = function call
+
+#### Getter and a Setter
+* GETTER - this will return a color:
+```js
+$('.el').css('color');
+```
+* SETTER - this will set a color:
+```js
+$('.el').css('color', 'blue');
+```
 
 # jQuery Selectors
+
+* *grab elements*
+```js
+$('li');
+```
+* *grab elements with a specific class*
+```js
+$('.some-class');
+```
+* *grab element with an id*
+```js
+$('#some-id');
+```
+
+* *parent child selection*
+```js
+$('ul li');
+```
+
+* *direct child selection*
+```js
+$('.container > p');
+```
+
+* *select elements with certain attribute*
+```js
+$('li[class="active"]');
+$('input[type="password"]');
+```
+
+* *get text from an elements*
+```js
+$('.el').text();
+```
+
+* *set text on an element*
+```js
+$('.el').text('some new text for my element');
+```
+* *access data attribute on an element*
+```js
+$('.el').data('category');
+```
+
+* *set data attribute on an element*
+```js
+$('.el').data('category', 'shoes');
+```
+
+
+* *append an element to the D
+OM*
+```js
+$('ul').append('<li>new item</li>');
+```
+* *remove an item from the DOM*
+```js
+$('.el').remove();
+```
+
+* *wrap your jQ in:*
+```js
+$(document).ready(function() {
+  // do stuff here
+});
+```
 
 # Assignment Prep
