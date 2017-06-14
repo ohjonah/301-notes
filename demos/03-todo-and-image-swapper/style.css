@@ -49,3 +49,7 @@ input[type="text"]:focus {
   margin: 5px 20px;
   list-style: circle;
 }
+
+.img-container {
+  margin-top: 20px;
+}
