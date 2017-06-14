@@ -28,3 +28,4 @@
 
 # Event Delegation
 * Capturing elements and having dynamic Events
+* You need to have a parent container to watch for all the dynamic things in the child elements
