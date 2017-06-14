@@ -165,4 +165,4 @@ $('.container').find('p');
 <span class="active"></span>
 
 author name:
-$newArticle.find('.byline').find('.a');
+$newArticle.find('.byline a').html(this.author);

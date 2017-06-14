@@ -2,6 +2,7 @@
 
 ### Class GitHub
 * [repo](https://github.com/codefellows/seattle-301d21)
+* [lab repo](https://github.com/codefellows-seattle-301d21/02-jquery_and_the_DOM)
 
 ### Web Frameworks
 * [foundation](http://foundation.zurb.com/)
