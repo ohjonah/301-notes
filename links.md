@@ -4,6 +4,10 @@
 * [repo](https://github.com/codefellows/seattle-301d21)
 * [lab repo](https://github.com/codefellows-seattle-301d21/02-jquery_and_the_DOM)
 
+### Libraries
+* [jquery cdn](https://code.jquery.com/)
+* [handlebars.js](http://handlebarsjs.com/)
+
 ### Web Frameworks
 * [foundation](http://foundation.zurb.com/)
 * [bootstrap](http://getbootstrap.com/)
