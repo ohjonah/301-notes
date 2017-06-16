@@ -1,73 +1,54 @@
-# Templating
+# Events and Delegation
 ***
 # Review
 
-* **TODO**: 'Read More/Read Less' Link:
-```js
-$('article').on('click', 'a.read-on', function(e) {
-  e.preventDefault(); // don't reload or take you somewhere else
-  if ($(this).text() === 'Read on...') {
-    $(this).parent().find('*').fadeIn();
-    $(this).html('Show Less &larr;');
-  } else {
-    $('body').animate({
-      scrolltop: ($(this).parent().offset().top)
-    }, 200);
-    $(this).html('Read on &rarr;');
-    $(this).parent().find('.article-body *:nth-of-type(n+2)').hide();
-  }
-});
-```
+* **imperative logic**: I want to do this and I want to do this, and now I have a thing. Procedural programming
 
-# Typography
-> visual component of the written word
-> * utility
-> * legibility
-> * design
+* **declarative logic**: The computer has things in the background that does imperative logic.
 
-#### Important Considerations for Font Selection:
-* color
-* weight
-* serif/sans serif
-* font
-* typeface
+# Events Overview
 
-#### How to Import an Externally Hosted Font
-```js
-@font-face {
-  font-family: 'myWebFont';
-  src: url('webFont'); // for IE, Chrome, etc
-}
-```
+#### DOM Events
+* When _______ , do _______ .
+* When the user does something, run some code.
+* When an event is fired, invoke a function.
+* We register a callback function as an event handler.
 
-#### Font Scaling
-* pixel : the static choice
-* [em ](type-scale.com): a dynamic option
-  ```css
-  body {
-    font-size: 62.5%
-  };
-  ```
-  ```css
-  span {
-    font-size: 1.6rem;
-  }
-  ```
-* rem : a more predictable em, based on the container
-* [vw demo](https://codepen.io/jonahoh/pen/bRBYBP)
+###### Why?
+* We can execute code out of order.
+* 'Asynchronous' callbacks.
 
-# HTML Templating
-[handlebars.js](handlebarsjs.com)
+###### What Events?
+* p246-247
+* click
+* hover
+* orientation change
+* resize
+* etc
 
-```js
-var product= {
-  title: 'tshirt';
-}
-```
+# Event Delegation
+* Capturing elements and having dynamic Events
+* You need to have a parent container to watch for all the dynamic things in the child elements
 
-```html
-<span>{{product.title}}</span>
-```
-# Demo
-See Demo Folder for 04
 # Lab
+
+TODO:
+1. data attribute that has the author name. data attr = author name
+2. if "this".val. If string is empty, falsy.
+3. all about matching. select brian nations. find an element with a data element with brian nations. fade it in. hide everything else
+4. otherwise (opposite of 3), show everything if it's empty.
+5. handlecategoryFilter -> category section, virtually identical to td3/4
+6. you will need to dynamically selector string based on the .tab-content that was clicked. dynamically build = query using data attribute and concatenate. req: query based on attr.
+```js
+input [type="text"] // data, author = brian nations
+
+// final result:
+$('section[data-author*="brian*"]');
+
+// *dynamic
+```
+7. go through everything high level. What needs to go through doc ready?
+
+1. go through everything.
+2. read out each file.
+3. start to implement. TODO in order.
