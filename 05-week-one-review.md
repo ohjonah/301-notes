@@ -19,7 +19,8 @@
   * use **vw** or **rem/em** (viewport width) for *font scaling*
 
 #### Intro to jQuery
-* used for Traversal, Selection, Manipulation
+> jQuery is used for Traversal, Selection, Manipulation
+
 * $('el')
   * $ - jQuery object
   * ('') - function
@@ -47,12 +48,14 @@ $('.el').on();
 * Event Delegation
   * capture the outer container and listen for elements to get inserted
 
-
-
-
-
-
-
-
-
 #### HTML Templating
+> used for dynamic development
+
+* create a template
+* compile the template
+* insert template into the DOM
+
+* handlebars.js
+  * {{ *object data* }}
+  * {{{ *some html* }}}
+    * escape html
