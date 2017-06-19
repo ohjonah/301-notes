@@ -27,3 +27,4 @@
 * Javascript, The Good Parts
 * Eloquent Javascript
 * Javascript Design Patterns
+* [The Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898)
