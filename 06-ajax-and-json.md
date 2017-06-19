@@ -94,3 +94,27 @@ $.getJSON('/api/cats', function(data) {
 * DELETES -> removes data
 
 These are VERBS that interact with a NOUN.
+
+
+# Web Request/Response Cycle
+| FROM: | ACTION: | TO: |
+|---|---|---|
+| Client | REQUEST | Server |
+| Server | BUILDS | DB |
+| DB | COMPILES | SERVER |
+| Server | RESPONDS | Client |
+
+#### Every REQUEST to a server needs
+1. URL
+2. method (get request)
+3. headers (meta data about the request)
+
+#### Every RESPONSE to a client
+1. headers
+2. body (data)
+3. status (300, 503, 200, etc)
+
+This follows the STATELESS protocol:
+> Server has no idea if another request is made
+
+* Server may attach e-tag to see if the request has already been made that would direct the same information back to the client
