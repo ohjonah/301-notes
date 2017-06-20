@@ -74,7 +74,7 @@ Node gives us the ability to I/O. You can grab a file, read its contents, manipu
   * ignores /node_modules, a directory that houses our packages that our app needs to install
 * npm - node package manager
   * to install packages in a node environment
-* REPL :  node has a built-in repl.
+* REPL :  node has a built-in repl, or a place to write some code
   * read
   * evaluate
   * print
@@ -84,7 +84,25 @@ Node gives us the ability to I/O. You can grab a file, read its contents, manipu
   node
   ```
 
-  
+To create a package.json file:
+```sh
+npm init -y
+```
+
+To create a node_modules directory
+```sh
+npm i -S express
+```
+This says: Hey node package manager, install a file called express, and save it as a dependency (-S)
+
+if you get rid of your modules, you can
+```sh
+npm i
+```
+and install based on your package.json meta data
+
+
+
 
 
 
