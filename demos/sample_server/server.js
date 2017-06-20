@@ -11,7 +11,7 @@ app.use(express.static('./public'));
 // at our homepage '/', serve index.html file
 app.get('/', function(req, res) {
   console.log('whats up');
-  res.sendFile('./public/index.html');
+  res.sendFile('./index.html');
 })
 
 app.listen(PORT, function() {
