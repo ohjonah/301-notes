@@ -10,7 +10,6 @@ app.use(express.static('./public'));
 // create route
 // at our homepage '/', serve index.html file
 app.get('/', function(req, res) {
-  console.log('whats up');
   res.sendFile('./index.html');
 })
 
@@ -18,7 +17,9 @@ app.listen(PORT, function() {
   console.log('currently listening on port:', PORT);
 });
 
-app.get('*', function(req, rest) {
-  res.status(404);
-  
-})
+// app.get('*', function(req, rest) {
+//   res.status(404);
+//
+// })
+
+// express error middleware
