@@ -17,3 +17,8 @@ app.get('/', function(req, res) {
 app.listen(PORT, function() {
   console.log('currently listening on port:', PORT);
 });
+
+app.get('*', function(req, rest) {
+  res.status(404);
+  
+})
