@@ -124,3 +124,29 @@ WHERE author = 'Keven Bacron';
 DELETE FROM articles
 WHERE author = 'Keven Bacron';
 ```
+
+
+### POSTGRES
+* Initiate it
+
+```sh
+psql
+```
+* Shell is an interface looking at things in the db
+
+### Shell Commands
+```sh
+\q // quit
+\l // lists databases
+\c // connects to databases
+\dt // look at tables
+```
+
+CMD: PostGres Commands
+```sh
+createdb [name] // creates db
+dropdb [name] // deletes db
+```
+
+# DEMO
+1. Build server to define endpoints
