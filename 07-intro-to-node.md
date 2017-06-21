@@ -96,7 +96,7 @@ npm i -S express
 ```
 This says: Hey node package manager, install a file called express, and save it as a dependency (-S)
 
-Don't forget to create your .gitignore file!
+<mark>Don't forget to create your .gitignore file!</mark>
 
 if you get rid of your modules, you can
 ```sh
@@ -104,15 +104,3 @@ npm i
 ```
 and install based on your package.json meta data
 
-# Lab
-
-
-
-
-
-
-
-
-
-
-# Build Server and Serve Files
