@@ -80,9 +80,10 @@ Node gives us the ability to I/O. You can grab a file, read its contents, manipu
   * print
   * loop
 
-  ```sh
-  node
-  ```
+
+```sh
+node
+```
 
 To create a package.json file:
 ```sh
@@ -94,6 +95,8 @@ To create a node_modules directory
 npm i -S express
 ```
 This says: Hey node package manager, install a file called express, and save it as a dependency (-S)
+
+Don't forget to create your .gitignore file!
 
 if you get rid of your modules, you can
 ```sh
