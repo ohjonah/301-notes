@@ -22,6 +22,7 @@
 * [jQ cheat sheet](https://oscarotero.com/jquery/)
 * [status requests](https://http.cat/)
 * [git ignore file builder](https://www.gitignore.io/)
+  * include: node, linux, mac, windows
 
 ### Demos
 
