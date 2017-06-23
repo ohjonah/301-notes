@@ -59,3 +59,52 @@ app.get('/api/cats')
 
 # SQL Joins and Relationships
 > the relational model of data permits the database designer to create a consistent, logical representation of information. consistency is achieved by including declared constraints in the database design, which is usually referred to as the logical schema
+
+#### Relational Data
+* complex data is organized using more than one table
+* redundancy is error prone
+
+#### Normalization
+* decomposing of a table into smaller, less redundant tables without losing information
+* ** one-to-one: ** author has a book
+* ** one-to-many: ** author has a book, articles,
+* ** many-to-many: ** office supplies is related to chairs, like staplers are. Staplers are part of the office accessories
+* foreign keys in the old table to reference primary key in the new table
+
+#### in class
+1. Drop table
+2. Create tables
+3. INTEGER NOT NULL REFERENCES
+
+# LAB
+#### TODO
+1. Write a SQL query which joins all data from articles and authors tables on the author_id
+```SQL
+SELECT * FROM articles
+INNER JOIN authors
+ON articles.author_id = authors.author_id;
+```
+
+2. Write a SQL query to insert a new author, ON CONFLICT DO NOTHING
+<!-- ```js
+  client.query(
+    'INSERT INTO authors(author, "authorUrl") VALUES($1, $2) ON CONFLICT DO NOTHING',
+    [request.body.author, request.body.authorUrl],
+  ')
+``` -->
+
+```SQL
+INSERT INTO authors(author, "authorUrl") VALUES($1, $2) ON CONFLICT DO NOTHING;
+```
+
+Add the author and "authorURL" as data for the SQL query
+
+# Ways to Experiment
+
+```sh
+createdb testdb
+psql testdb // drops us in the db
+\d // no relations found
+CREAT table person(person_id SERIAL PRIMARY KEY, first_name VARCHAR(64), last_name VARCHAR(64), ssn INTEGER, date_of_birth VARCHAR(25);)
+\d // see the relations.
+```
