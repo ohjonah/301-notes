@@ -93,3 +93,6 @@ harder to work with. memory usage.
   * sort
   * reverse
   * splice
+
+
+#### Map
