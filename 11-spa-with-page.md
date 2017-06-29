@@ -1,7 +1,7 @@
 # SPA w/ page.js
 ***
 
-** outline **: weekly outline, SPA overview, page.js/client-side routing, assignment prep
+** outline ** : weekly outline, SPA overview, page.js/client-side routing, assignment prep
 
 
 # Routing and Controllers
